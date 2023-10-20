@@ -1,34 +1,34 @@
-# palm_toolkit
+# palm-nlp-toolkit
 
-**palm_toolkit** is a JavaScript module that simplifies various text-related tasks using the Google's PaLM API. This toolkit includes functions for text generation, translation, summarization, sentiment analysis, question answering, and text classification.
+**palm-nlp-toolkit** is a JavaScript module that simplifies various text-related tasks using the Google's PaLM API. This toolkit includes functions for text generation, translation, summarization, sentiment analysis, question answering, and text classification.
 
 ## Installation
 
-To use **palm_toolkit** in your JavaScript project, you can install it using npm:
+To use **PaLM_NLP_Toolkit** in your JavaScript project, you can install it using npm:
 
 ```bash
-npm install palm_toolkit
+npm install palm-nlp-toolkit
 ```
 
 ## Usage
 
 ```javascript
-const palm_toolkit = require('palm_toolkit');
+const nlpToolkit = require('palm-nlp-toolkit');
 
 // Example 1: Translate Text
-const translatedText = await palm_toolkit.translateText('Hello, world!', 'English', 'French');
+const translatedText = await nlpToolkit.translateText('Hello, world!', 'English', 'French');
 
 // Example 2: Summarize Text
-const summary = await palm_toolkit.summarizeText('A long piece of text...', 2);
+const summary = await nlpToolkit.summarizeText('A long piece of text...', 2);
 
 // Example 3: Analyze Sentiment
-const sentimentScore = await palm_toolkit.analyzeSentiment('I am feeling great today!');
+const sentimentScore = await nlpToolkit.analyzeSentiment('I am feeling great today!');
 
 // Example 4: Answer Question
-const answer = await palm_toolkit.answerQuestion('What is the capital of France?', 'Paris is the capital of France.');
+const answer = await nlpToolkit.answerQuestion('What is the capital of France?', 'Paris is the capital of France.');
 
 // Example 5: Classify Text
-const categories = await palm_toolkit.classifyText('This is a news article about technology.');
+const categories = await nlpToolkit.classifyText('This is a news article about technology.');
 
 console.log('Translated Text:', translatedText);
 console.log('Summary:', summary);
@@ -80,7 +80,7 @@ Classifies input text into predefined categories.
 
 ## Configuration
 
-Before using the **palm_toolkit**, make sure to set your API key in the `.env` file:
+Before using the **palm-nlp-toolkit**, make sure to set your API key in the `.env` file:
 
 ```
 PALM_API_KEY=YOUR_API_KEY
